@@ -18,12 +18,29 @@
             <button id="btnPrev" type="button">Предыдущий</button>
             <button id="btnNext" type="button">Следующий</button>
             <div id="divCal"></div>
+
+            <div style="margin-top: 10px">
+                <p style="margin-bottom: 3px">Средняя годовая заработная плата в рублях</p>
+                <input id="inputSalary1" oninput="frstInput()" placeholder="..."/>
+                <button id="confirm" onclick="sendRequest()"> Рассчитать</button>
+            </div>
+            
         </div>
         <div class="calendar-wrapper">
-                <input id="inp" placeholder="Средняя годовая зарплата..."/>
+            <p style="margin-bottom: 3px">Дней в отпуске</p>
+            <input id="vacDays" oninput="validateInputVacationDays()" placeholder="..."/>
 
-                <button id="confirm" onclick="sendRequest()"> Рассчитать</button>
+            <p style="margin-top: 8px; margin-bottom: 3px">Дата ухода в отпуск</p>
+            <input id="inputDate" oninput="validateInputDate()" placeholder="dd-mm-yyyy"/>
+
+            <p style="margin-top: 8px; margin-bottom: 3px">Средняя годовая заработная плата в рублях</p>
+            <input id="inputSalary2" oninput="scndInput()" placeholder="..."/>
+
+            <button id="confirm" onclick="sendRequest()"> Рассчитать</button>
+            <p id="result" style="margin-top: 3px"></p> 
         </div>
+
+        <p id="result" style="margin-top: 3px"></p> 
         <script src="js/index.js"></script>
     </body>
 </html>
