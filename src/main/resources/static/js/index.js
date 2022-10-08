@@ -1,6 +1,3 @@
-// Шаблон для создания календаря взят с ресурса https://proglib.io/p/javascript-i-html-delaem-prostoy-kalendar-za-5-minut-2022-06-01  
-//                                                     и допилен под задание Neoflex                                                            
-
 var vacationDays;
 var vacationStartsAtDay, vacationStartsAtMonth, vacationStartsAtYear;
 var vacationEndsAtDay, vacationEndsAtMonth, vacationEndsAtYear;
